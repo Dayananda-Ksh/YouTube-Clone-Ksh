@@ -3,11 +3,18 @@ p{
     margin-top: 0px;
     margin-bottom: 0px;
 }
+.parent-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    column-gap: 15px;
+    row-gap: 30px
+}
 .root-div{
     display: inline-block;
     vertical-align: top;
     width: 350px;
 }
+
 .video-container{
     width: 350px;
     margin-bottom: 12px;
@@ -20,11 +27,8 @@ p{
     display: grid;
     grid-template-columns: 50px 1fr;
 }
-.profile-container{
-    /* display: inline-block; */
-    vertical-align: top;
-    /* width: 40px; */
-}
+/* .profile-container{ */
+/* } */
 .channel-profile{
     width: 40px;
     border-radius: 50px;
@@ -46,7 +50,6 @@ p{
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 4px;
-
 }
 .video-stats{
     color: rgb(96, 96, 96);
