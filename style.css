@@ -1,3 +1,10 @@
+body{
+    margin: 0px;
+    padding-top: 90px;
+    padding-left: 100px;
+    padding-right: 10px;
+}
+
 p{
     font-family: Roboto, Arial, sans-serif;
     margin-top: 0px;
@@ -5,39 +12,34 @@ p{
 }
 .parent-div {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    column-gap: 15px;
-    row-gap: 30px
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 7px;
+    row-gap: 40px
 }
 .root-div{
     display: inline-block;
     vertical-align: top;
-    width: 350px;
+    width: 330px;
 }
 
 .video-container{
-    width: 350px;
+    width: 100%;
     margin-bottom: 12px;
 }
 .video-template{
-    width: 350px;
+    width: 100%;
     border-radius: 10px;
 }
 .video-description-container{
     display: grid;
     grid-template-columns: 50px 1fr;
 }
-/* .profile-container{ */
-/* } */
+
 .channel-profile{
     width: 40px;
     border-radius: 50px;
 }
-/* .description-container{ */
-    /* display: inline-block; */
-    /* width: 306px; */
-    
-/* } */
+
 .video-title {
     margin-top: 0px;
     font-size: 18px;
