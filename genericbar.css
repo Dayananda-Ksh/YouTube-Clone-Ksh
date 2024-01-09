@@ -1,0 +1,9 @@
+.genericbar{
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 60px;
+    z-index: 90;
+}

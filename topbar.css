@@ -8,6 +8,7 @@
     right: 0px;
     left: 0px;
     top: 0px;
+    z-index: 100;
     
 }
 
@@ -70,6 +71,21 @@
     background-color: rgba(238, 230, 230, 0.258);
     border: 1px solid rgba(128, 128, 128, 0.489);
     margin-left: -1px;
+    position: relative;
+}
+.tooltip{
+    position: absolute;
+    bottom: -50px;
+    right: 5px;
+    background-color: rgba(128, 128, 128, 0.985);
+    color: white;
+    padding: 8px 6px 8px 6px;
+    border-radius: 3px;
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.1s;
+    pointer-events: none;
 }
 .voice-search-btn{
     height: 40px;
@@ -83,22 +99,42 @@
 }
 
 .right{
-    width: 130px;
+    width: 140px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 30px;
+    margin-right: 28px;
+    margin-bottom: 4px;
     flex-shrink: 0;
 }
 .create-video-icon{
-    height: 35px;
+    height: 38px;
 
 }
 .profile-icon{
-    height: 33px;
+    height: 32px;
     border-radius: 50%;
 }
 
 .notification-icon{
-    height: 25px;
+    height: 24px;
+}
+.notification-btn{
+    position: relative;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+.notification-count{
+    position: absolute;
+    background-color: rgb(183, 14, 14);
+    padding: 1px 5px 1px 5px;
+    color: white;
+    border-radius: 50%;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    top: -3px;
+    right: -4px;
+}
+.search-btn:hover .tooltip{
+    opacity: 1;
 }
